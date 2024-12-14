@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the HTML version and ensures compatibility with modern browsers -->
+    <meta charset="UTF-8">
+    <!-- Sets the viewport for responsive design, making it suitable for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title of the webpage that will appear in the browser tab -->
+    <title>Spotify Profile</title>
+    <!-- Link to an external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The main heading of the webpage -->
+    <h1>Spotify Profile Viewer</h1>
+    
+    <!-- Button to trigger the Spotify login flow -->
+    <button id="login">Login to Spotify</button>
+
+    <!-- Section to display the user's Spotify profile after login -->
+    <section id="profile" style="display: none;">
+        <h2>Logged in as <span id="displayName">...</span></h2>
+        <div id="avatar"></div>
+        <ul>
+            <li>User ID: <span id="id">...</span></li>
+            <li>Email: <span id="email">...</span></li>
+            <li>Spotify URI: <a id="uri" href="#">...</a></li>
+            <li>Profile Image: <span id="imgUrl">...</span></li>
+        </ul>
+    </section>
+
+    <!-- JavaScript file that contains the logic for the Spotify API integration -->
+    <!-- Placed at the end of the body to ensure all DOM elements are loaded before script execution -->
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>
